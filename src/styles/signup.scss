@@ -1,0 +1,50 @@
+.signup-body {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .signup-container {
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: white;
+        border-radius: 15px;
+        .image-container {
+            width: 50%;
+            padding-right: 20px;
+            img {
+                object-fit: cover;
+            }
+        }
+        .signup-info {
+            padding-left: 20px;
+            display: flex;
+            row-gap: 20px;
+            flex-direction: column;
+            .signup-title {
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .signup-title-sub {
+                h5,
+                h6 {
+                    text-align: center;
+                }
+            }
+            .input-group {
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                input {
+                    height: 50px;
+                    border: solid 1px grey;
+                    border-radius: 15px;
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+}

@@ -15,6 +15,12 @@ const Navbar = () => {
                 <li>
                     <Link to="/Productdetail">Product Detail</Link>
                 </li>
+                <li>
+                    <Link to="/Login">Đăng Nhập</Link>
+                </li>
+                <li>
+                    <Link to="/Signup">Đăng Ký</Link>
+                </li>
             </ul>
         </nav>
     );
