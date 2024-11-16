@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import './App.css';
-import HomePage from './pages/Home';
-import ProductsPage from './pages/Products';
-import ProductDetailPage from './pages/ProductDetail';
+import HomePage from './components/Home';
+import ProductsPage from './components/Products';
+import ProductDetailPage from './components/ProductDetail';
 
 const App = () => {
     return (
