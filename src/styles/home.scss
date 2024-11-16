@@ -1,0 +1,41 @@
+.homepage-container {
+    display: flex;
+    justify-content: center;
+}
+
+.background-img {
+    width: 80%;
+    padding-top: 80px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 80px 0 80px;
+  
+    .slogan {
+      font-family: Arial, Helvetica, sans-serif;
+  
+      .text1 {
+        font-weight: bold;
+        font-size: 50px;
+      }
+  
+      .text2 {
+        font-size: 20px;
+        padding-top: 20px;
+        letter-spacing: 5px;
+      }
+  
+      .highlighted {
+        color: #3b52ff;
+      }
+    }
+  
+    .img_banner2 {
+      width: 450px;
+      height: 400px;
+    }
+  }
+  

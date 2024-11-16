@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import '../styles/products.css';
-
+import '../styles/products.scss';
+// thanh navbar: home, course, checkout, about us, contact
+// giao dien: home, login, signup, checkout, wishlist, contact
+// code css: chuyen thanh sass hoac scss
 const Products = () => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
