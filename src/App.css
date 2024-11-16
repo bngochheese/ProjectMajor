@@ -32,7 +32,98 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+/* css reset - start */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+/* css reset - end */
+
+.App {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 25px;
+  grid-gap: 10px;
+}
+
+.youtube-img {
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.youtube-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.youtube-footer {
+  display: flex;
+  align-items: center;
+}
+
+.youtube-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 100rem;
+  object-fit: cover;
+}
+
+.youtube-info {
+  display: grid;
+  row-gap: 10px;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.youtube-title {
+  font-weight: bold;
+}
+
+.youtube-author {
+  font-weight: lighter;
 }
