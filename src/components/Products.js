@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import '../styles/products.scss';
-// thanh navbar: home, course, checkout, about us, contact
-// giao dien: home, login, signup, checkout, wishlist, contact
-// code css: chuyen thanh sass hoac scss
+
 const Products = () => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -13,7 +11,7 @@ const Products = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const res = await axios.get('https://6735e57f5995834c8a948dad.mockapi.io/api/product/products');
+                const res = await axios.get('https://6739791fa3a36b5a62eeb829.mockapi.io/api/Courses');
                 setProducts(res.data);
             } catch (error) {
                 setError(error);

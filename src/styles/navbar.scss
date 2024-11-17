@@ -11,15 +11,25 @@ nav {
         padding: 0;
         display: flex;
         justify-content: center;
+        align-items: center;
+
+        .logo {
+            height: 100%;
+
+            img {
+                height: 50px;
+            }
+        }
 
         li {
             margin: 10px;
+            position: relative;
 
             a {
                 color: white;
                 text-decoration: none;
                 font-size: 18px;
-                padding: 10px 20px;
+                padding: 15px;
                 display: block;
                 transition: background-color 0.5s ease;
 
@@ -30,6 +40,76 @@ nav {
 
                 &:active {
                     background-color: #444;
+                }
+            }
+        }
+
+        .search-group {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 300px;
+            height: 40px;
+            border: none;
+            border-radius: 15px;
+            padding: 0 10px 0 10px;
+            background-color: white;
+
+            .search-box {
+                border: none;
+                height: 100%;
+                width: 90%;
+            }
+
+            i {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 15%;
+                height: 80%;
+                border-radius: 15px;
+                &:hover {
+                    cursor: pointer;
+                    background-color: #d8d8d8;
+                }
+            }
+        }
+
+        .account {
+            margin: 10px;
+            
+            .account-trigger {
+                width: 100%;
+                color: white;
+                font-size: 18px;
+                padding: 15px;
+                cursor: pointer;
+                transition: background-color 0.5s ease;
+
+                &:hover {
+                    background-color: red;
+                    border-radius: 15px;
+                }
+            }
+
+            .dropdown-menu {
+                position: absolute;
+                background-color: white;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                margin-left: 50px;
+
+                a {
+                    color: black;
+                    padding: 8px 12px;
+                    text-decoration: none;
+                    font-size: 16px;
+
+                    &:hover {
+                        background-color: #f0f0f0;
+                        border-radius: 10px;
+                    }
                 }
             }
         }

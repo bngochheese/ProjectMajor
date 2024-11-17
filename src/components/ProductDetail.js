@@ -13,7 +13,7 @@ const ProductDetail = () => {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const res = await axios.get(`https://6735e57f5995834c8a948dad.mockapi.io/api/product/products/${id}`);
+                const res = await axios.get(`https://6739791fa3a36b5a62eeb829.mockapi.io/api/Courses/${id}`);
                 setProduct(res.data);
             } catch (error) {
                 setError(error);

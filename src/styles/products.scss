@@ -14,9 +14,14 @@ body {
     display: flex;
     flex-direction: column;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding-bottom: 20px;
     border-radius: 15px;
     background-color: white;
+}
+
+.product-info a {
+    text-decoration: none;
+    padding-bottom: 20px;
+
 }
 
 .product-info img {
@@ -28,6 +33,7 @@ body {
 }
 
 .product-info-detail {
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
 }

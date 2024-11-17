@@ -135,7 +135,7 @@ const Login = () => {
                                     className='toggle'
                                     onClick={() => setShowPassword(!showPassword)}
                                 >
-                                    <i class={showPassword ? 'ri-eye-line' : 'ri-eye-off-line'}></i>
+                                    <i className={showPassword ? 'ri-eye-line' : 'ri-eye-off-line'}></i>
                                 </button>
                             </div>
                             {formErrors.password && <h6 className='error'>!{formErrors.password}</h6>}
@@ -145,7 +145,7 @@ const Login = () => {
                             <div className='google-signup-button-group'>
                                 <button className='google-signup-button'>
                                     <h6>Đăng nhập tài khoản với</h6>
-                                    <i class="ri-google-line"></i>
+                                    <i className="ri-google-line"></i>
                                 </button>
                             </div>
                             <div className='login-prompt'>
