@@ -1,11 +1,13 @@
-// BUI NGOC - ĐÃ XONG
+
 import React from "react";
 import imgLogo from '../assets/images/logoapp1.png';
 import imgFacebook from '../assets/images/icon_facebook.png';
 import imgTiktok from '../assets/images/icon_tiktok.png';
+import '../styles/footer.scss'
 
 const Footer = () =>{
     return(
+
         <div className="body_info_container">
                 <div className="info_left">
                     <div className="logo">

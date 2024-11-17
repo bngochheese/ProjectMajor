@@ -12,7 +12,7 @@ import imgTearcher3 from '../assets/images/jisoo.jpeg';
 import imgAva from '../assets/images/icon_facebook.png';
 import iconSub2 from '../assets/images/icon_sub_2.png';
 import Footer from '../components/Footer';
-
+import imgBanner2 from '../assets/images/banner2.png'
 const Home = () => {
     const [title, setTitle] = useState('');
 
@@ -155,19 +155,17 @@ const Home = () => {
             </div>
 
             {/* 5 chinh lai*/}
-            <div className="sub_container">
-                <div className="sub_container2">
-                    <img src={iconSub2} className="subscribe-icon" />
-                    <div className="sub_text1">
-                        <h2>Subscribe Newsletter</h2>
-                        <p> You learn today and eam tomorrow. <br />The roots of education are bitter but the fruits are sweet</p>
-                    </div>
-                    <div className="input-group">
-                        <input type="text" className="form-control" placeholder="Enter Your Email Address"
-                            aria-label="Enter Your Email Address" aria-describedby="basic-addon2" />
-                        <button className="btn btn-primary" type="button">SUBSCRIBE</button>
-                    </div>
+            <div className="banner">
+                <div className="slogan">
+                    <p className="text1"> 
+                    Thúc đẩy <span className="highlighted">sự nghiệp<br />của bạn & mở rộng <br /></span> <span className="highlighted">kiến thức </span> ở bất kỳ cấp độ nào.<br />
+                    </p>
+                    <p className="text2">
+                        Cung cấp cho bạn hệ thống học trực tuyến mới nhất và tài liệu giúp kiến thức của bạn ngày càng phát triển.
+                    </p>
                 </div>
+                <img className="img_banner3" src={imgBanner2} alt="Banner" />
+               
             </div>
 
             {/* 6 */}

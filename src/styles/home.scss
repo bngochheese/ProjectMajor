@@ -19,16 +19,22 @@
 
   .slogan {
     font-family: Arial, Helvetica, sans-serif;
+    padding-right: 200px;
 
     .text1 {
       font-weight: bold;
       font-size: 50px;
+      text-align: justify;
+      line-height: 1.5;
+
     }
 
     .text2 {
       font-size: 20px;
       padding-top: 20px;
       letter-spacing: 5px;
+      text-align: justify;
+      line-height: 1.5;
     }
 
     .highlighted {
@@ -39,6 +45,11 @@
   .img_banner2 {
     width: 450px;
     height: 400px;
+  }
+
+  .img_banner3 {
+    width: 550px;
+    height: 500px;
   }
 }
 
@@ -107,13 +118,14 @@
 
         .container {
           padding: 16px;
-
           h4 {
             margin: 10px 0;
           }
 
           p {
             color: gray;
+            line-height: 1.5;
+
           }
         }
       }
@@ -132,12 +144,18 @@
         font-size: 28px;
         text-align: justify;
         font-weight: bold;
+      line-height: 1.5;
+
       }
 
       p {
         font-size: 18px;
         text-align: justify;
         width: 40%;
+        display: flex;
+        row-gap: 10px;
+      line-height: 1.5;
+
       }
 
       .text_box_1 {
@@ -145,6 +163,7 @@
         justify-content: center;
         align-items: center;
         padding: 30px;
+        
       }
     }
   }
@@ -169,12 +188,16 @@
       h2 {
         font-size: 28px;
         font-weight: bold;
+      line-height: 1.5;
+
       }
 
       p {
         font-size: 18px;
         text-align: justify;
         width: 40%;
+      line-height: 1.5;
+
       }
 
     }
@@ -192,6 +215,10 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         width: 300px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        .comment {
+          line-height: 1.5;
+        }
 
         .avatar {
           margin-bottom: 20px;
@@ -248,49 +275,6 @@
 
     .input-group {
       padding: 40px 350px 0;
-    }
-  }
-}
-
-// PHAN 6
-.body_info_container {
-  display: flex;
-  background-color: rgb(255, 255, 255);
-  padding: 30px 80px 30px 80px;
-  justify-content: space-between;
-
-  .info_left {
-
-    .logo {
-      display: flex;
-      align-items: center;
-      font-size: 20px;
-      font-weight: bold;
-      font-family: Arial, Helvetica, sans-serif;
-      margin-right: 20px;
-      padding: 0 20px 0 20px;
-
-      img {
-        width: 150px;
-      }
-    }
-
-    .info {
-      font-size: 20px;
-    }
-  }
-
-  .info_right {
-
-    .links {
-      display: flex;
-      align-items: center;
-
-      img {
-        width: 40px;
-        margin-right: 10px;
-        margin-top: 10px;
-      }
     }
   }
 }
