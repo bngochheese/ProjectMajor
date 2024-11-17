@@ -1,6 +1,6 @@
-// BUI NGOC - CÒN STYLE PHẦN 5
+// BUI NGOC - DA XONG
 
-import React, { useEffect, useState } from 'react';
+import usePageTitle from '../components/usePageTitle';
 import '../styles/home.scss'
 import imgBanner from '../assets/images/img_banner_index.png';
 import iconPr1 from '../assets/images/icon_pr_1.png';
@@ -10,15 +10,10 @@ import imgTearcher1 from "../assets/images/ka.jpg";
 import imgTearcher2 from "../assets/images/win.jpeg";
 import imgTearcher3 from '../assets/images/jisoo.jpeg';
 import imgAva from '../assets/images/icon_facebook.png';
-import iconSub2 from '../assets/images/icon_sub_2.png';
 import Footer from '../components/Footer';
 import imgBanner2 from '../assets/images/banner2.png'
 const Home = () => {
-    const [title, setTitle] = useState('');
-
-    useEffect(() => {
-        document.title = title;
-    })
+    usePageTitle('EduFlow - Trang chủ');
 
     // JSX = JavaSript XML
     return (

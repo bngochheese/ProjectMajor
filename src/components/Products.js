@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import usePageTitle from '../components/usePageTitle';
 import '../styles/products.scss';
 
 const Products = () => {
+    usePageTitle('EduFlow - Khóa học');
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
